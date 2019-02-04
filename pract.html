@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[
+            {name:"ibrahim",no:34},
+            {name:"ali",no:22},
+            {name:"amer",no:12},
+            {name:"asad",no:98},
+            {name:"agha",no:1}
+        ];
+
+       let b= arr.sort((a, b) => (a.no > b.no) ? 1 : -1);
+       console.log(b)
+       let abc=Date.now();
+       console.log(abc)
+       setTimeout(()=>
+       {
+       let d=new Date(abc);
+       console.log(d.getFullYear().toString());
+       },2000);
+    </script>
+</body>
+</html>
